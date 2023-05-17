@@ -12,10 +12,12 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@next/font": "^13.4.2",
     "@types/node": "20.1.5",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
     "autoprefixer": "^10.4.14",
+    "classnames": "^2.3.2",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.2",
     "next": "13.4.2",
@@ -35,6 +37,7 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-storybook": "^0.6.12",
     "sass": "^1.62.1",
+    "sass-resources-loader": "^2.2.5",
     "storybook": "^7.0.12"
   }
 }
