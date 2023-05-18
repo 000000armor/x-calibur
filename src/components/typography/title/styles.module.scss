@@ -1,0 +1,23 @@
+.component {
+  font-weight: 600;
+
+  &.h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  &.h2 {
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  &.h3 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  &.h4 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
