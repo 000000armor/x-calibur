@@ -7,15 +7,15 @@ const meta: Meta<typeof Input> = {
   component: Input,
   tags: ['autodocs'],
   argTypes: {},
-};
-
-export default meta;
-type Story = StoryObj<typeof Input>;
-
-export const Base: Story = {
   args: {
     value: 'lorem ipsum dolor sit amet consectetur adipisicing elit.',
     label: 'label',
     id: 'id',
   },
 };
+
+export default meta;
+
+type Base = StoryObj<typeof Input>;
+
+export const Base: Base = {};

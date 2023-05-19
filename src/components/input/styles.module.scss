@@ -1,0 +1,41 @@
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  &.error {
+    margin-bottom: $--gap-2xs;
+  }
+}
+
+.label {
+  margin-bottom: $--gap-xs;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.warning-icon {
+  position: absolute;
+  right: $--gap-s;
+  top: $--gap-s;
+}
+
+.input {
+  padding: $--gap-s $--gap-m;
+  border-radius: $--border-radius-xs;
+  border: 1px solid $color-graphic-secondary;
+
+  &:focus {
+    outline: none;
+    border-color: $color-graphic-primary;
+  }
+
+  &.error {
+    border-color: $color-graphic-attention;
+  }
+}
+
+.error-message {
+  color: $color-text-attention;
+}
