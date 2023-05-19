@@ -2,12 +2,24 @@ import cn from 'classnames';
 import styles from './styles.module.scss';
 
 export interface TextProps {
-  bold?: boolean;
   children: string;
+  bold?: boolean;
+  span?: boolean;
+  className?: string;
 }
 
-export const Text = ({ children, bold = false }: TextProps) => {
+export const Text = ({
+  children,
+  bold = false,
+  span = false,
+  className,
+}: TextProps) => {
+  const Component = span ? 'span' : 'p';
   return (
-    <p className={cn(styles.component, { [styles.bold]: bold })}>{children}</p>
+    <Component
+      className={cn(styles.component, { [styles.bold]: bold }, className)}
+    >
+      {children}
+    </Component>
   );
 };
