@@ -1,5 +1,8 @@
+import { montserrat } from './../src/styles/fonts';
 import type { Preview } from '@storybook/react';
 import '../src/styles/globals.scss';
+
+document.body.classList.add(montserrat.className);
 
 const preview: Preview = {
   parameters: {
